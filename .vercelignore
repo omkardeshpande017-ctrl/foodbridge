@@ -1,0 +1,7 @@
+**/node_modules
+frontend/dist
+backend/.env
+frontend/.env
+.git
+*.log
+run-mac.sh

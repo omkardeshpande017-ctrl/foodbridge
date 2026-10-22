@@ -1,0 +1,24 @@
+{
+  "name": "foodbridge",
+  "private": true,
+  "version": "2.0.0",
+  "description": "FoodBridge — food donation & delivery platform (React + serverless Express API)",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "dev": "bash -c 'npm --prefix backend run dev & npm --prefix frontend run dev & wait'",
+    "backend": "npm --prefix backend run dev",
+    "frontend": "npm --prefix frontend run dev",
+    "seed": "npm --prefix backend run seed",
+    "build": "npm --prefix frontend run build",
+    "test": "node backend/test/smoke.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5",
+    "morgan": "^1.10.0"
+  }
+}
